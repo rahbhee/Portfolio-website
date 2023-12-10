@@ -539,8 +539,44 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+body{
+  background-color: #000033;
+  color: #000033;
+}
+.resume-btn{
+  background-color: #6666ff;
+  padding: 8px 16px;
+  color: white;
+}
+.contact-btn{
+  background-color: #000033;
+  color: white;
+  
+}
 .fa-brands{
-  font-size: 1.5rem;
+  border: 5px solid #b3b3ff;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  height: 2.9rem;
+  width: 2.9rem;
+}
+button span{
+  text-align: center;
+  align-self: center;
+}
+button{
+  line-height: 100%;
+}
+main{
+  background-color: #fff;
+  border: 5px solid #b3b3ff;
+}
+.name-tag, .name-intro{
+  color: #6666ff;
+}
+.dark{
+  width: 1.5rem;
 }
 .text-3xl {
   font-size: 1.875rem;
