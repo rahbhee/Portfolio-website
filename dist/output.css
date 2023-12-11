@@ -571,9 +571,22 @@ button{
 main{
   background-color: #fff;
   border: 5px solid #b3b3ff;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
 .name-tag, .name-intro{
   color: #6666ff;
+}
+aside{
+  grid-column: 2 / span 2;
+  margin-top: 12rem;
+}
+article{
+  grid-column: 4 / 7;
+  margin-top: 6rem;
+}
+header{
+  grid-column: 4 / span 12;
 }
 .dark{
   width: 1.5rem;
