@@ -543,15 +543,27 @@ body{
   background-color: #000033;
   color: #000033;
 }
+nav p{
+  margin-left: 2rem;
+}
 .resume-btn{
   background-color: #6666ff;
-  padding: 8px 16px;
+  padding: .2rem 2.4rem;
+  border-radius: .3rem;
+  max-width: 8rem;
   color: white;
+  line-height: 2;
+  margin-top: 1rem;
+  margin-right: 1rem;
 }
 .contact-btn{
   background-color: #000033;
+  padding: .2rem 1.4rem;
+  max-width: 8rem;
+  border-radius: .3rem;
   color: white;
-  
+  line-height: 2;
+  margin-top: 1rem;
 }
 .fa-brands{
   border: 5px solid #b3b3ff;
@@ -560,6 +572,12 @@ body{
   font-size: 1.2rem;
   height: 2.9rem;
   width: 2.9rem;
+}
+.line{
+  width: .15rem;
+  height: 5rem;
+  border-color: #e0e0eb;
+  margin-left: 1.3rem;
 }
 button span{
   text-align: center;
@@ -590,6 +608,7 @@ header{
 }
 .dark{
   width: 1.5rem;
+  margin-left: 4rem;
 }
 .text-3xl {
   font-size: 1.875rem;
@@ -602,4 +621,74 @@ header{
 
 .underline {
   text-decoration-line: underline;
+}
+.fa-paintbrush{
+  position: relative;
+  animation-name: paint;
+  animation-duration: 1.3s;
+  animation-delay: 3s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+/*.fa-chevron-left{
+  position: relative;
+  animation-name: left-tag;
+  animation-duration: 2s;
+}*/
+@keyframes paint{
+  0%{left: 0px; margin-right: 25px;}
+  100%{left: 50px; margin-right: 50px;}
+}
+
+@media  (min-width: 481px) and (max-width: 1024px) {
+  body {
+    
+  }
+  header{
+    grid-column: 1 / span 12
+  }
+  nav p{
+  margin-left: 1.2rem;
+  }
+  .dark{
+    margin-left: 1.5rem;
+  }
+  aside{
+    grid-column: 1 / span 1;
+    margin-left: 1rem;
+  }
+  article{
+    grid-column: 4 / span 8;
+  }
+}
+@keyframes paint{
+  0%{left: 0px; margin-right: 10px;}
+  100%{left: 20px; margin-right: 20px;}
+}
+
+@media (max-width: 480px) {
+  body {
+      
+  }
+  header{
+    grid-column: 1 / span 12
+  }
+  nav p{
+  margin-left: 1.5rem;
+  }
+  .dark{
+    margin-left: 4rem;
+  }
+  aside{
+    grid-column: 1 / span 1;
+    margin-left: 1rem;
+  }
+  article{
+    grid-column: 4 / span 8;
+  }
+  header div{
+    margin-bottom: 1.5rem;
+    margin-left: 1.1rem;
+  }
 }
