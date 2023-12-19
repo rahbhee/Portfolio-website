@@ -493,7 +493,6 @@ video {
 body{
   background-color: #000033;
   color: #000033;
-  overflow: hidden;
   font-family: 'Roboto';
 }
 nav p{
@@ -539,12 +538,13 @@ button span{
 button{
   line-height: 100%;
 }
-main{
+main, section{
   background-color: #fff;
   border: 5px solid #b3b3ff;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
+
 .name-tag, .name-intro{
   color: #6666ff;
 }
@@ -579,7 +579,7 @@ header{
   position: relative;
   animation-name: paint;
   animation-duration: 1.3s;
-  animation-delay: 0.5s;
+  animation-delay: .75s;
   animation-timing-function: ease-in-out;
   animation-direction: alternate;
   animation-iteration-count: infinite;
@@ -597,6 +597,7 @@ p, h2, button{
 }*/
 header, aside, article, section{
   animation: transitionIn 1s;
+  animation-timing-function: ease-in-out;
 }
 @keyframes paint{
   0%{left: 0px; margin-right: 25px;}
