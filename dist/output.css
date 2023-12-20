@@ -500,9 +500,9 @@ nav p{
 }
 .resume-btn{
   background-color: #6666ff;
-  padding: .2rem 2.4rem;
+  padding: .2rem 1rem;
   border-radius: .3rem;
-  max-width: 8.3rem;
+  width: 8rem;
   color: white;
   line-height: 2;
   margin-top: 1rem;
@@ -510,8 +510,8 @@ nav p{
 }
 .contact-btn{
   background-color: #000033;
-  padding: .2rem 1.4rem;
-  max-width: 8.3rem;
+  padding: .2rem 1rem;
+  width: 8rem;
   border-radius: .3rem;
   color: white;
   line-height: 2;
@@ -538,11 +538,12 @@ button span{
 button{
   line-height: 100%;
 }
-main, section{
+main{
   background-color: #fff;
   border: 5px solid #b3b3ff;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  width: 71rem;
 }
 
 .name-tag, .name-intro{
@@ -587,7 +588,7 @@ header{
 .fa-chevron-left, .fa-chevron-right{
   font-size: 1.2rem;
 }
-p, h2, button{
+nav p, h2, button{
   font-weight: bold;
 }
 /*.fa-chevron-left{
@@ -595,10 +596,28 @@ p, h2, button{
   animation-name: left-tag;
   animation-duration: 2s;
 }*/
-header, aside, article, section{
+header, aside, article{
   animation: transitionIn 1s;
   animation-timing-function: ease-in-out;
 }
+.hide{
+  display: none;
+}
+section{
+  grid-column: 4 / span 5;
+  margin-top: 8rem;
+  font-weight: lighter;
+  line-height: 1.7rem;
+  font-weight: 370;
+  text-align: justify;
+}
+.display{
+  display: block;
+}
+.about{
+  display: none;
+}
+
 @keyframes paint{
   0%{left: 0px; margin-right: 25px;}
   100%{left: 50px; margin-right: 50px;}
